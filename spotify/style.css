@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.left {
+    width: 25vw;
+}
+
+.right {
+    position: relative;
+    width: 75vw;
+}
+
+.home ul li {
+    display: flex;
+
+    gap: 15px;
+    width: 23px;
+    padding-top: 21px;
+}
+
+.radius {
+    border-radius: 7px;
+}
+
+.p1 {
+    padding: 15px;
+}
+
+.limbo {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.limbo img {
+    width: 25px;
+}
+
+.limbo h2 {
+    font-size: 16px;
+}
+
+.font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.library {
+    min-height: 76vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    gap: 14px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a {
+    color: rgb(167, 167, 167);
+    font-size: 12px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+
+}
+
+.nav .hamburger{
+    display: none;
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.SpotifyPlaylist .card {
+
+    width: 200px;
+}
+
+.card h2 p {
+    padding-top: 3px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.card {
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.cardcontainer {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 95px;
+    right: 12px;
+}
+
+.explore {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 3px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 140px;
+    font-size: 14px;
+}
+
+.explore:hover {
+
+    padding: 5px 5px;
+    font-weight: bolder;
+
+    width: 144px;
+    font-size: 15px;
+}
+
+.install {
+    border: none;
+    border-radius: 15px;
+    padding: 6px 4px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 109px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.install:hover {
+
+    padding: 5px 6px;
+    font-weight: bolder;
+
+    width: 111px;
+    font-size: 15px;
+}
+
+
+
+.list {
+    position: absolute;
+    bottom: 2px;
+    background-color: #212121;
+    width: 95%;
+    padding: 12px;
+    border-radius: 12px;
+    width: 70vw;
+    height: 30px;
+
+}
+
+.songslist {
+    height: 350px;
+    overflow: auto;
+    margin: 20px 0px;
+}
+
+.songslist ul {
+    padding: 0 20px;
+
+}
+
+.songslist ul li {
+    list-style-type: decimal;
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+    border: 2px solid white;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-content: space-between;
+    height: 35px;
+}
+
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playnow {
+    display: flex;
+    width: 178px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.info>* {
+    margin: 3px 0px;
+}
+
+.songslist .info {
+    font-size: 10px;
+    width: 444px;
+}
+
+.seekbar {
+
+    background-color: white;
+    border-radius: 4px;
+    width: 97%;
+    position: absolute;
+    bottom: 1px;
+    height: 3px;
+    margin: 2px;
+    cursor: pointer;
+
+}
+
+.circle {
+    height: 9px;
+    width: 9px;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    bottom: 3px;
+    left: 0%;
+    transition: left 0.5s;
+
+}
+
+.infotime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text {
+    font-size: 13px;
+}
+.close{
+    display: none;
+}
+
+@media (max-width : 1100px) {
+    .left {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 333px;
+    }
+
+     .close{
+        position: absolute;
+        top: 8px;
+        right: 11px;
+        display: block;
+    }
+
+    .right{
+        width: 100vw;
+    }
+    .list{
+        width: 94vw;
+    }
+    .nav .hamburger{
+        display: block;
+    }
+
+  
+
+}
